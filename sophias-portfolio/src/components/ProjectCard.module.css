@@ -1,0 +1,136 @@
+.card {
+  background: #fff;
+  border: 0.5px solid rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  padding: 1.25rem;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.15s, transform 0.15s;
+  cursor: default;
+}
+
+.card:hover {
+  border-color: rgba(0, 0, 0, 0.25);
+  transform: translateY(-2px);
+}
+
+.accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  border-radius: 12px 12px 0 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.icon {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.status {
+  font-size: 10px;
+  font-family: "Space Mono", monospace;
+  padding: 3px 8px;
+  border-radius: 100px;
+}
+
+.title {
+  font-family: "Fraunces", serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 0.4rem;
+  line-height: 1.2;
+}
+
+.desc {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-size: 10px;
+  font-family: "Space Mono", monospace;
+  padding: 3px 8px;
+  background: #f5f4f0;
+  border-radius: 4px;
+  color: #666;
+}
+
+.links {
+  display: flex;
+  gap: 8px;
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+
+.link {
+  font-size: 11px;
+  font-family: "Space Mono", monospace;
+  color: #666;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.15s;
+}
+
+.link:hover {
+  color: #1a1a1a;
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #c477dd;
+  flex-shrink: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .card {
+    background: #1a1a1a;
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  .card:hover {
+    border-color: rgba(255, 255, 255, 0.25);
+  }
+  .title {
+    color: #f0f0f0;
+  }
+  .desc {
+    color: #999;
+  }
+  .tag {
+    background: #2a2a2a;
+    color: #999;
+  }
+  .link {
+    color: #999;
+  }
+  .link:hover {
+    color: #f0f0f0;
+  }
+  .links {
+    border-top-color: rgba(255, 255, 255, 0.08);
+  }
+}

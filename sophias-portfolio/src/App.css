@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Fraunces:wght@300;600&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  background: #fafaf8;
+  color: #1a1a1a;
+  min-height: 100vh;
+}
+
+.portfolio {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+}
+
+/* Hero */
+.hero {
+  margin-bottom: 3rem;
+}
+
+.hero-tag {
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 0.75rem;
+}
+
+.hero-name {
+  font-family: "Fraunces", serif;
+  font-size: clamp(36px, 7vw, 56px);
+  font-weight: 300;
+  line-height: 1.1;
+  color: #1a1a1a;
+  margin-bottom: 0.75rem;
+}
+
+.hero-name-accent {
+  font-weight: 600;
+  background: linear-gradient(135deg, #7f77dd, #d4537e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-sub {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.7;
+  max-width: 400px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Filter chips */
+.chips {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  font-family: "Space Mono", monospace;
+  font-size: 11px;
+  padding: 5px 14px;
+  border: 0.5px solid rgba(0, 0, 0, 0.2);
+  border-radius: 100px;
+  background: transparent;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.chip:hover {
+  background: #f0efe9;
+  color: #1a1a1a;
+  border-color: rgba(0, 0, 0, 0.35);
+}
+
+.chip-active {
+  background: #1a1a1a;
+  color: #fff;
+  border-color: #1a1a1a;
+}
+
+/* Section label */
+.section-label {
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1.5rem;
+  border-top: 0.5px solid rgba(0, 0, 0, 0.12);
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.footer-text {
+  font-size: 12px;
+  color: #888;
+}
+
+.cta-btn {
+  font-family: "Space Mono", monospace;
+  font-size: 11px;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #7f77dd, #d4537e);
+  /* border: 0.5px solid rgba(0, 0, 0, 0.25); */
+  border-radius: 100px;
+  cursor: pointer;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.cta-btn:hover {
+  background: #1a1a1a;
+  color: #fff;
+  border-color: #1a1a1a;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #111;
+    color: #f0f0f0;
+  }
+  .hero-name {
+    color: #f0f0f0;
+  }
+  .hero-sub {
+    color: #999;
+  }
+  .chip {
+    border-color: rgba(255, 255, 255, 0.2);
+    color: #999;
+  }
+  .chip:hover {
+    background: #2a2a2a;
+    color: #f0f0f0;
+    border-color: rgba(255, 255, 255, 0.35);
+  }
+  .chip-active {
+    background: #f0f0f0;
+    color: #111;
+    border-color: #f0f0f0;
+  }
+  .footer {
+    border-top-color: rgba(255, 255, 255, 0.1);
+  }
+  .footer-text {
+    color: #666;
+  }
+  .cta-btn {
+    color: #f0f0f0;
+    border-color: rgba(255, 255, 255, 0.25);
+  }
+  .cta-btn:hover {
+    background: #f0f0f0;
+    color: #111;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio {
+    padding: 2rem 1rem 3rem;
+  }
+}
