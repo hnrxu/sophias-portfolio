@@ -8,7 +8,7 @@ export const projects = [
     status: "live",
     icon: "",
     accent: "linear-gradient(90deg, #7F77DD, #AFA9EC)",
-    links: { "try it out": "https://sophias-study-tool.vercel.app/", github: "https://github.com/hnrxu/sophias_study_tool.git" },
+    links: { "try it out": "https://sophias-study-tool.vercel.app/", demo: "https://drive.google.com/file/d/1_9gmnRUCFTl40kReGvYYp7NrXLcGAVv-/view?usp=share_link", github: "https://github.com/hnrxu/sophias_study_tool.git" },
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ export const projects = [
     status: "live",
     icon: "",
     accent: "linear-gradient(90deg, #9e1d93ff, #ca5db4ff)",
-    links: { "try it out": "https://sophias-finance-app.vercel.app/", github: "https://github.com/hnrxu/sophias-finance-app.git" },
+    links: { "try it out": "https://sophias-finance-app.vercel.app/", demo: "https://drive.google.com/file/d/10IA-rSKLjjX_C_-RE7WrUpzg6XSjqjAF/view?usp=share_link", github: "https://github.com/hnrxu/sophias-finance-app.git"},
   },
 ];
 
